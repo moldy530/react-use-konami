@@ -1,0 +1,44 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules"
+  ],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "no-implicit-dependencies": false,
+    "no-submodule-imports": false,
+    "ordered-imports": false,
+    "object-curly-spacing": [
+      true,
+      "always"
+    ],
+    "jsx-no-multiline-js": false,
+    "object-literal-sort-keys": false,
+    "interface-over-type-literal": false,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "no-console": false
+  },
+  "rulesDirectory": [],
+  "exclude": [
+    "node_modules"
+  ],
+  "autoFixOnSave": true,
+  "linterOptions": {
+    "exclude": [
+      "node_modules"
+    ]
+  }
+}

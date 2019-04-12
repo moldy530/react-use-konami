@@ -1,0 +1,64 @@
+{
+  "name": "react-use-konami",
+  "version": "0.0.1",
+  "description": "react hook that adds konami code to your component",
+  "author": "moldy",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "lint": "npm run lint:ts",
+    "lint:ts": "tslint -p tsconfig.json",
+    "build": "tsc -p .",
+    "clean": "rimraf lib",
+    "watch": "tsc -p . --watch",
+    "test": "jest --config jest/unit.json"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@babel/polyfill": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "enzyme": "^3.9.0",
+    "eslint": "^5.16.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.7.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "travis-lint": "^1.0.0",
+    "tslint": "^5.15.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --color"
+    ],
+    "*.ts": [
+      "tslint"
+    ],
+    ".travis.yml": "travis-lint"
+  },
+  "keywords": [
+    "konami",
+    "hooks",
+    "konami",
+    "code",
+    "use-konami",
+    "react"
+  ]
+}

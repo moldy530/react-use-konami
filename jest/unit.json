@@ -1,0 +1,18 @@
+{
+  "rootDir": "../src",
+  "testRegex": "/__tests__/.*(-test|-tests|\\.test|\\.tests)\\.(js|ts)$",
+  "testPathIgnorePatterns": [
+    "<rootDir>/build/",
+    "<rootDir>/dist/",
+    "<rootDir>/lib/",
+    "/node_modules/",
+    "/__integration__/"
+  ],
+  "transform": {
+    "^.+\\.(js|ts)$": "babel-jest"
+  },
+  "testEnvironment": "jsdom",
+  "setupFiles": [
+    "<rootDir>/../jest/setup.js"
+  ]
+}

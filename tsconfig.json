@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "strict": true,
+    "outDir": "lib",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "module": "es6",
+    "sourceMap": true,
+    "declaration": true,
+    "types": []
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules",
+    "**/__tests__/*",
+    "**/__integration__/*"
+  ]
+}
