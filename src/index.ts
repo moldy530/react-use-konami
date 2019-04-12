@@ -1,7 +1,3 @@
-import { useEffect, useState } from 'react';
-
-const useKonami = () => {
-    return null;
-};
+import useKonami from './use-konami';
 
 export default useKonami;
