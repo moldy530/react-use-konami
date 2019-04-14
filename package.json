@@ -1,6 +1,6 @@
 {
   "name": "react-use-konami",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "react hook that adds konami code to your component",
   "author": "moldy",
   "license": "MIT",
@@ -12,7 +12,8 @@
     "build": "tsc -p .",
     "clean": "rimraf lib",
     "watch": "tsc -p . --watch",
-    "test": "jest --config jest/unit.json"
+    "test": "jest --config jest/unit.json",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": "^16.8.6",
@@ -43,7 +44,8 @@
     "travis-lint": "^1.0.0",
     "tslint": "^5.15.0",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.4.3"
+    "typescript": "^3.4.3",
+    "semantic-release": "^15.13.3"
   },
   "lint-staged": {
     "*.js": [
@@ -61,5 +63,9 @@
     "code",
     "use-konami",
     "react"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moldy530/react-use-konami.git"
+  }
 }
