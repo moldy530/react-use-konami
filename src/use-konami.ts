@@ -1,24 +1,17 @@
 import { useEffect, useReducer } from 'react';
 
-import KonamiState from './types/konami-state';
 import konamiReducer, { initialState } from './reducer';
+import ReducerAction from './types/reducer-actions';
 
-type KonamiProps = {
+const useKonami = (
     handler: () => any,
-    options?: {code: number[]} | undefined,
-};
-
-const useKonami = (props: KonamiProps) => {
-    const {
-        handler,
-        options,
-    } = props;
-
+    options?: {code: number[]},
+) => {
     const [ state, dispatch ] = useReducer(konamiReducer, initialState(options && options.code));
 
     useEffect(() => {
         const listener = (e: KeyboardEvent) => dispatch({
-            type: 'KEY_UP',
+            type: ReducerAction.KeyUp,
             payload: e.code,
         });
 

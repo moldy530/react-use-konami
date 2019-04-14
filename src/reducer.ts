@@ -1,5 +1,6 @@
 import KonamiState from './types/konami-state';
 import Action from './types/action';
+import ReducerAction from './types/reducer-actions';
 
 export const initialState = (initialCode: number[] = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]): KonamiState => {
     return {
@@ -11,7 +12,7 @@ export const initialState = (initialCode: number[] = [38, 38, 40, 40, 37, 39, 37
 
 const konamiReducer = (state: KonamiState, action: Action) => {
     switch (action.type) {
-        case 'KEY_UP': {
+        case ReducerAction.KeyUp: {
             if (state.success) {
                 return state;
             } else if (state.code[0] === action.payload) {
