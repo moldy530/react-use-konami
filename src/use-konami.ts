@@ -22,7 +22,7 @@ const useKonami = (
 
     useEffect(() => {
         if (state.success) { handler(); }
-    }, [state]);
+    }, [ state, handler ]);
 };
 
 export default useKonami;
