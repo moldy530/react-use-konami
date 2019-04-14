@@ -12,11 +12,19 @@ cache:
 
 install:
   - npm install
-script:
-  - npm run lint
-  - npm run test
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-  - npm run build && npx semantic-release
+
+jobs:
+  include:
+    - stage: "Test"
+      name: "Lint"
+      script:
+        - npm run lint
+    - name: "Unit Tests"
+      script:
+        - npm run test
+    - stage: "Deploy"
+      provider: script
+      skip_cleanup: true
+      script:
+      - npm run build && npx semantic-release
+
