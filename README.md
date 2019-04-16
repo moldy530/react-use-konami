@@ -15,15 +15,15 @@ const MyComponent = () => {
     /** 
     * takes two parameters:
     * handler: () => any
-    * options?: {code: number[]}
+    * options?: {code: string[]}
     * 
-    * the default code is: [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
-    * [ up, up, down, down, left, right, left, right, b, a, enter ] 
+    * the default code is: 
+    *  ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter']
     */
     useKonami(() => {
         console.log('hi easter egg!');
     }, {
-        code: [1, 2, 3], 
+        code: ['ArrowUp', 'ArrowDown', 'Enter'], 
     });
     
     return <div> Hi World </div>;

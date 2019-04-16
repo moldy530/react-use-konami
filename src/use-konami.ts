@@ -5,14 +5,14 @@ import { ReducerAction } from './types';
 
 const useKonami = (
     handler: () => any,
-    options?: {code: number[]},
+    options?: {code: string[]},
 ) => {
     const [ state, dispatch ] = useReducer(konamiReducer, initialState(options && options.code));
 
     useEffect(() => {
         const listener = (e: KeyboardEvent) => dispatch({
             type: ReducerAction.KeyUp,
-            payload: e.keyCode || e.which,
+            payload: e.key,
         });
 
         window.addEventListener('keyup', listener);
