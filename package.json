@@ -4,8 +4,8 @@
   "description": "react hook that adds konami code to your component",
   "author": "moldy",
   "license": "MIT",
-  "main": "index.js",
-  "types": "types/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
   "files": [
     "lib/**",
     "README.md"
@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "npm run lint:ts",
     "lint:ts": "tslint -p tsconfig.json",
-    "build": "tsc -p . && cp package.json lib/package.json && cp README.md lib/README.md"
+    "build": "tsc -p . && cp package.json lib/package.json && cp README.md lib/README.md",
     "clean": "rimraf lib",
     "test": "jest --config jest/unit.json"
   },
