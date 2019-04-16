@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "npm run lint:ts",
     "lint:ts": "tslint -p tsconfig.json",
-    "build": "tsc -p .",
+    "build": "tsc -p . && cp package.json lib/package.json && cp README.md lib/README.md",
     "clean": "rimraf lib",
     "watch": "tsc -p . --watch",
     "test": "jest --config jest/unit.json",
