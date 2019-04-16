@@ -1,7 +1,7 @@
 import { useEffect, useReducer } from 'react';
 
 import konamiReducer, { initialState } from './reducer';
-import ReducerAction from './types/reducer-actions';
+import { ReducerAction } from './types';
 
 const useKonami = (
     handler: () => any,

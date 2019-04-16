@@ -15,7 +15,8 @@
     "moduleResolution": "node",
     "module": "es6",
     "sourceMap": true,
-    "declaration": true,
+    "declaration": false,
+    "declarationDir": "lib/types",
     "types": []
   },
   "include": [

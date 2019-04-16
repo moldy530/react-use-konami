@@ -1,5 +1,5 @@
 import reducer, { initialState } from "../reducer";
-import ReducerAction from "../types/reducer-actions";
+import { ReducerAction } from "../types";
 
 describe("konami-reducer", () => {
   it("should update the code on correct input", () => {
