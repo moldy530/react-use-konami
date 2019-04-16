@@ -13,7 +13,7 @@
   "scripts": {
     "lint": "npm run lint:ts",
     "lint:ts": "tslint -p tsconfig.json",
-    "build": "tsc -p . && cp package.json lib/package.json && cp README.md lib/README.md",
+    "build": "tsc -p .",
     "clean": "rimraf lib",
     "test": "jest --config jest/unit.json"
   },
