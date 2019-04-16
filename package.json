@@ -5,7 +5,7 @@
   "author": "moldy",
   "license": "MIT",
   "main": "lib/index.js",
-  "types": "lib/types/index.d.ts",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**",
     "README.md"
