@@ -1,3 +1,1 @@
-import useKonami from './use-konami';
-
-export default useKonami;
+export * from './use-konami';

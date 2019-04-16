@@ -1,6 +1,4 @@
-import KonamiState from './types/konami-state';
-import Action from './types/action';
-import ReducerAction from './types/reducer-actions';
+import { Action , KonamiState, ReducerAction } from './types';
 
 export const initialState = (initialCode: number[] = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]): KonamiState => {
     return {

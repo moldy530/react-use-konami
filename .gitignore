@@ -63,5 +63,8 @@ coverage
 
 # build
 dist
+lib
+.rpt2_cache
 
 .firebase/*
+
