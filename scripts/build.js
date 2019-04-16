@@ -85,7 +85,5 @@ function clean(){
     await exec('npx tsc --declaration --emitDeclarationOnly');
 
     // copy rest of code
-    await copy('README.md');
-    await copy('package.json');
     await copy('npm/index.js', 'index.js');
 })();

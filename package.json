@@ -4,10 +4,11 @@
   "description": "react hook that adds konami code to your component",
   "author": "moldy",
   "license": "MIT",
-  "main": "index.js",
-  "types": "types/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
   "files": [
-    "dist"
+    "lib/**",
+    "README.md"
   ],
   "scripts": {
     "lint": "npm run lint:ts",
