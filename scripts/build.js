@@ -81,6 +81,9 @@ function clean(){
         return result.write(bundle.outputConfig);
     }));
 
+    // generate types
+    await exec('npx tsc --declaration --emitDeclarationOnly');
+
     // copy rest of code
     await copy('npm/index.js', 'index.js');
 })();
