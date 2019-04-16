@@ -1,6 +1,6 @@
 {
   "name": "react-use-konami",
-  "version": "1.0.9",
+  "version": "1.0.9-SNAPSHOT",
   "description": "react hook that adds konami code to your component",
   "author": "moldy",
   "license": "MIT",
