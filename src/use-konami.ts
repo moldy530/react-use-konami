@@ -12,7 +12,7 @@ const useKonami = (
     useEffect(() => {
         const listener = (e: KeyboardEvent) => dispatch({
             type: ReducerAction.KeyUp,
-            payload: e.code,
+            payload: e.keyCode || e.which,
         });
 
         window.addEventListener('keyup', listener);

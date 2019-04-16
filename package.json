@@ -5,7 +5,6 @@
   "author": "moldy",
   "license": "MIT",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "files": [
     "lib/**",
     "README.md"
@@ -13,7 +12,7 @@
   "scripts": {
     "lint": "npm run lint:ts",
     "lint:ts": "tslint -p tsconfig.json",
-    "build": "tsc -p .",
+    "build": "node scripts/build.js",
     "clean": "rimraf lib",
     "test": "jest --config jest/unit.json"
   },

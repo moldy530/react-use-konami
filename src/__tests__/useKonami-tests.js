@@ -7,7 +7,7 @@ describe('use-konami', () => {
     const handler = jest.fn();
 
     const TestComponent = () => {
-        useKonami(handler, { code: [1] });
+        useKonami(handler, { code: [1, 2] });
 
         return (<div/>);
     };
@@ -18,7 +18,13 @@ describe('use-konami', () => {
 
         act(() => {
             const event = new KeyboardEvent('keyup',  { key: '1' });
-            Object.defineProperty(event, 'code', {value : 1});
+            Object.defineProperty(event, 'keyCode', {value : 1});
+            global.dispatchEvent(event);
+        });
+
+        act(() => {
+            const event = new KeyboardEvent('keyup',  { key: '2' });
+            Object.defineProperty(event, 'which', {value : 2});
             global.dispatchEvent(event);
         });
 
