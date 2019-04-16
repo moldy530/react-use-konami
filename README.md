@@ -1,4 +1,4 @@
-# react-use-konami
+# react-use-konami [![Build Status](https://travis-ci.org/moldy530/react-use-konami.svg?branch=master)](https://travis-ci.org/moldy530/react-use-konami)
 React custom hook to add easter egg functionality to your React components.
 
 ### Installation
