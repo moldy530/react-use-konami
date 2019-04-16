@@ -7,7 +7,7 @@ describe('use-konami', () => {
     const handler = jest.fn();
 
     const TestComponent = () => {
-        useKonami(handler, { code: [1, 2] });
+        useKonami(handler, { code: ['UpArrow', 'DownArrow'] });
 
         return (<div/>);
     };
@@ -17,14 +17,12 @@ describe('use-konami', () => {
         expect(handler.mock.calls.length === 0).toBe(true);
 
         act(() => {
-            const event = new KeyboardEvent('keyup',  { key: '1' });
-            Object.defineProperty(event, 'keyCode', {value : 1});
+            const event = new KeyboardEvent('keyup',  { key: 'UpArrow' });
             global.dispatchEvent(event);
         });
 
         act(() => {
-            const event = new KeyboardEvent('keyup',  { key: '2' });
-            Object.defineProperty(event, 'which', {value : 2});
+            const event = new KeyboardEvent('keyup',  { key: 'DownArrow' });
             global.dispatchEvent(event);
         });
 
