@@ -21,7 +21,10 @@ const useKonami = (
     }, []);
 
     useEffect(() => {
-        if (state.success) { handler(); }
+        if (state.success) {
+            handler();
+            dispatch({ type: ReducerAction.Reset });
+        }
     }, [ state, handler ]);
 };
 

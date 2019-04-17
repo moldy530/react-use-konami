@@ -38,6 +38,8 @@ const konamiReducer = (state: KonamiState, action: Action) => {
             }
             return initialState(state.initialCode);
         }
+        case ReducerAction.Reset:
+            return initialState(state.initialCode);
         default:
             return state;
     }
