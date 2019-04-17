@@ -27,6 +27,7 @@ jobs:
       script:
         - npm run test
     - stage: "Deploy"
+      if: branch = master
       provider: script
       skip_cleanup: true
       script:
